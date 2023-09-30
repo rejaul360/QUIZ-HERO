@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page Question & Answer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container  ">
+        <h1 class="text-center font-bold text-4xl  my-5 px-6 ">Question and Answer Blog </h1>
+    </header>
+
+    <section class="lg:px-12 px-6 mb-8 ">
+        <div class=" shadow-2xl p-10">
+            <h1 class="text-2xl font-bold "> 1. Difference between map find filter forEach ? </h1>
+            <p class="mt-2 ml-12 text-lg font-medium">
+                <span class="font-bold  text-lg">Answer :</span> Map, find, filter, forEach these are array methods,
+                These
+                methods are described below.....
+                <br>
+            <ul class="text-lg ml-24 font-medium leading-10 mt-6">
+                <li>1. Map method : The map() method return an array . It is used to create a new array, access each
+                    element of the array separately using a loop thro throw </li>
+
+                <li>2. Filter method : Filter is an array method, given a condition and based on that condition,only
+                    the elements that match will be returned as an array</li>
+
+                <li>3. Find method : The find mathod is the younger brother of the filter method .Using the find
+                    method only one element is returned, based on the condition it will find the first match and
+                    return it
+                    without going any further </li>
+
+                <li>4. ForEach method : If we don't need to return anything from the array then we will use the
+                    forEach method </li>
+            </ul>
+            </p>
+        </div>
+    </section>
+    <section class="lg:px-12 px-6  mb-8">
+        <div class="shadow-2xl p-10">
+            <h1 class="text-2xl font-bold"> 2. Difference between local storage, session storage and cookies ? 
+            </h1>
+            <p class="mt-2 ml-12 text-lg font-medium">
+                <span class="font-bold  text-lg"> Answer : </span>
+
+                <br>
+            <ul class="text-lg ml-24 font-medium leading-10 mt-6">
+                <li>1. Local storage : Local storage data can be kept permanently
+                    Setting data in local storage stays in local storage until it is deleted.....
+                    Even if the computer is turned off, the data will not change</li>
+                    
+                <li>2. Session storage : After setItems the session storage data, the data remains in the session 
+                     storage until we exit the tab or close the tab, or turn off the computer... won't go</li>
+                <li>3. Coockes :  Cookies in JavaScript are data stored in the browser's local storage,whichis      
+                     used to save information about the user and website interactions, such as settings, 
+                     preferences, and login 
+                     credentials. They can also be used for tracking and analytics purposes.</li>
+            </ul>
+            <br>
+            </p>
+            <p class=" ml-12">
+               
+            </p>
+        </div>
+    </section>
+    <section class="lg:px-12 px-6 mb-8">
+        <div class="shadow-2xl p-10">
+            <h1 class="text-2xl font-bold "> 3. What is Event loop ? </h1>
+            </h1>
+            <p class="mt-2 ml-12 text-lg font-medium">
+                <span class="font-bold  text-lg"> Answer : </span>
+
+                <br>
+            <ul class="text-lg ml-24 font-medium leading-10 mt-6">
+                <li>Event loop is a programming construct that continuously looks for some type of event or activity and then reacts to it. It is used to process events in a timely fashion, such as user input, system events, and messages from other programs or threads. It is core to the design of many software systems, including operating systems, windowing systems and even web browsers.</li>
+                    
+            </ul>
+            <br>
+            </p>
+        </div>
+    </section>
+
+    <div class="container  mt-20">
+        <h1 class="text-center font-bold text-4xl  my-5 px-6  ">QuizTimer Function & ChooseQuiz Function</h1>
+    </div>
+
+    <section class="lg:px-12 px-6 mb-8 ">
+        <div class=" shadow-2xl p-10">
+            <h1 class="text-2xl font-bold "> 1. How does the quizTimer function work ? </h1>
+            <p class="mt-2 ml-12 text-lg font-medium">
+
+                <br>
+            <ul class="text-lg ml-24 font-medium leading-10 mt-6">
+                <li>1. The quizTimer function takes one parameter, dismiss, which is a boolean.</li>
+
+                <li>2. If the dismiss parameter is true, the function will clear the timer interval, otherwise it 
+                    will set an interval to count the seconds.</li>
+
+                <li>3.  Inside the interval, a countHtml variable is set to select the #count element in the HTML 
+                    document.</li>
+
+                <li>4. The count is then converted to minutes and seconds and stored in the min and countSec 
+                    variables.</li>
+
+                <li>5.   The innerHTML of countHtml is then set to the min and countSec variables.</li>
+                <li>6. The count is incremented by one.</li>
+                <li>7. If the count is greater than 60, the class of countHtml is changed to either red-300 or red-
+                    700.</li>
+                <li>8.  Finally, the interval is cleared or set again, depending on the value of dismiss.</li>
+            </ul>
+            </p>
+        </div>
+    </section>
+    <section class="lg:px-12 px-6  mb-8">
+        <div class="shadow-2xl p-10">
+            <h1 class="text-2xl font-bold"> 1. How does the chooseQuiz function work ? 
+            </h1>
+            <p class="mt-2 ml-12 text-lg font-medium">
+                <span class="font-bold  text-lg"> Answer : </span>
+
+                <br>
+            <ul class="text-lg ml-24 font-medium leading-10 mt-6">
+                <li>1. The chooseQuiz function takes two parameters, an index and a givenAns.</li>
+
+               <li>2.  It then checks if an answer corresponding to the given index exists in the answers array.
+                 </li>
+
+               <li>3.   If an answer does exist, the function will loop through the answers array to find the answer
+                 that corresponds to the given index. </li>
+
+               <li>4. If the answer is found, it will then be spliced from the answers array, and the new answer 
+                with the givenAns is added in its place. 
+                </li>
+
+               <li>5. If an answer does not exist, the new answer with the givenAns is added to the answers array. 
+
+               </li>
+               <li>6.  Finally, the displayAnswers function is called and the answers array is passed in as a 
+                parameter.
+               </li>
+            </ul>
+            <br>
+            </p>
+            <p class=" ml-12">
+               
+            </p>
+        </div>
+    </section>
+    <footer class="p-2">
+        <button id="back_home" class="Calculate_btn_tow ml-12"> Go Back</button>
+    </footer>
+
+    <script>
+        document.getElementById('back_home').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        })
+    </script>
+</body>
+
+</html>
